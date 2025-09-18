@@ -161,6 +161,7 @@
 }
 
 .media-single img {
+    width: 180px;
     height: 140px;
 }
 
@@ -421,6 +422,11 @@
         height: 170px;
     }
 
+    .tartaruga-plasticos {
+        height: 140px !important;
+        width: 200px !important;
+    }
+
     .media-stack img,
     .media-single img {
         width: 170px;
@@ -442,5 +448,29 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+/* Ajuste específico: manter tartaruga retangular */
+.tartaruga-plasticos {
+    width: 220px !important;
+    height: 140px !important;
+}
+
+.tartaruga-plasticos img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+@media (min-width:901px) {
+    .tartaruga-plasticos {
+        width: 240px !important;
+        height: 150px !important;
+    }
+
+    .tartaruga-plasticos img {
+        width: 100% !important;
+        height: 100% !important;
     }
 }
