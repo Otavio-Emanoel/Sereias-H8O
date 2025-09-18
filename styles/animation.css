@@ -1,0 +1,180 @@
+/* Animações globais do site */
+:root {
+    --anim-base: .8s;
+    --anim-ease: cubic-bezier(.4, .07, .25, 1);
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes bob {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes gentleScale {
+    from {
+        transform: scale(.92);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Entrada geral */
+body {
+    animation: fadeIn 1s var(--anim-ease) both;
+}
+
+.hero,
+.about-header {
+    animation: gentleScale 1s var(--anim-ease) both;
+}
+
+/* Seções principais */
+.sobre .container>*,
+.about-wrapper>.section,
+.team-list>.role {
+    opacity: 0;
+    animation: fadeUp var(--anim-base) var(--anim-ease) both;
+}
+
+.sobre .container>*:nth-child(1) {
+    animation-delay: .05s;
+}
+
+.sobre .container>*:nth-child(2) {
+    animation-delay: .15s;
+}
+
+.about-wrapper>.section:nth-child(1) {
+    animation-delay: .05s;
+}
+
+.about-wrapper>.section:nth-child(2) {
+    animation-delay: .15s;
+}
+
+.about-wrapper>.section:nth-child(3) {
+    animation-delay: .25s;
+}
+
+.team-list>.role:nth-child(1) {
+    animation-delay: .05s;
+}
+
+.team-list>.role:nth-child(2) {
+    animation-delay: .12s;
+}
+
+.team-list>.role:nth-child(3) {
+    animation-delay: .19s;
+}
+
+.team-list>.role:nth-child(4) {
+    animation-delay: .26s;
+}
+
+.team-list>.role:nth-child(5) {
+    animation-delay: .33s;
+}
+
+.team-list>.role:nth-child(6) {
+    animation-delay: .40s;
+}
+
+/* Membros individuais */
+.member {
+    opacity: 0;
+    animation: fadeUp .7s var(--anim-ease) both;
+}
+
+.members .member:nth-child(1) {
+    animation-delay: .05s;
+}
+
+.members .member:nth-child(2) {
+    animation-delay: .18s;
+}
+
+/* Cards & frase */
+.card {
+    opacity: 0;
+    animation: fadeUp .7s var(--anim-ease) both .2s;
+}
+
+.frase {
+    opacity: 0;
+    animation: fadeUp .9s var(--anim-ease) both .35s;
+}
+
+/* Ondas e ícones decorativos com loop suave */
+.onda,
+.onda-about {
+    animation: float 5s ease-in-out infinite alternate;
+}
+
+.member__icon,
+.role__icon,
+.card img {
+    animation: bob 6s ease-in-out infinite;
+}
+
+/* Reduzir movimento para quem prefere */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition: none !important;
+    }
+
+    .onda,
+    .onda-about,
+    .member__icon,
+    .role__icon,
+    .card img {
+        animation: none !important;
+    }
+}

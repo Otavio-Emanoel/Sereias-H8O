@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, Arial, sans-serif;
+    color: #23476a;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero {
+    background: #caecf1;
+    text-align: center;
+    padding: 48px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.logo {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-family: 'Yeseva One', serif;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2b4863;
+}
+
+.decor {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 4px;
+}
+
+.decor .onda {
+    width: 110px;
+    height: auto;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.08));
+}
+
+.h2o {
+    font-family: 'Amatic SC', serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #2b4863;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre {
+    background: #e9decf;
+    padding: 56px 56px 40px;
+    flex: 1;
+    display: flex;
+}
+
+.sobre .container {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto {
+    max-width: 560px;
+}
+
+.texto h2 {
+    font-family: 'Yeseva One', serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    color: #2b4863;
+}
+
+.texto p {
+    font-family: 'Alice', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2b4863;
+    letter-spacing: 0.4px;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+}
+
+.cards {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 190px;
+    text-decoration: none;
+    background: #caecf1;
+    border-radius: 12px;
+    padding: 16px 14px 12px;
+    gap: 10px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, .05);
+}
+
+.card img {
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+}
+
+.card span {
+    font-family: 'Alice', serif;
+    color: #2b4863;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #95c8d7;
+    box-shadow: 0 8px 18px -4px rgba(0, 0, 0, .12);
+}
+
+.card:active {
+    transform: translateY(-2px);
+}
+
+.frase {
+    font-family: 'Sacramento', cursive;
+    font-size: 32px;
+    color: #2b4863;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+@media (max-width:600px) {
+    .hero {
+        padding: 40px 16px 32px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .decor {
+        gap: 16px;
+    }
+
+    .decor .onda {
+        width: 80px;
+    }
+
+    .h2o {
+        font-size: 20px;
+    }
+
+    .sobre {
+        padding: 48px 28px 40px;
+    }
+
+    .texto h2 {
+        font-size: 34px;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+
+    .card {
+        width: 140px;
+        height: 180px;
+    }
+
+    .frase {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:480px) {
+    .sobre {
+        padding: 40px 24px 40px;
+    }
+
+    .cards {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 120px;
+        height: 165px;
+    }
+
+    .frase {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:1100px) {
+    .sobre .container {
+        gap: 56px;
+    }
+}
+
+@media (max-width:900px) {
+    .sobre .container {
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .texto {
+        max-width: 100%;
+    }
+
+    .acoes {
+        width: 100%;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+}

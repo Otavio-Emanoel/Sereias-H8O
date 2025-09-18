@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+.about-body {
+    background: #ddfaff;
+    font-family: 'Alice', serif;
+}
+
+.about-header {
+    background: #caecf1;
+    padding: 28px 54px 26px;
+}
+
+.about-header__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand__logo {
+    width: 100px;
+    height: auto;
+}
+
+.brand__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand__title {
+    font-family: 'Yeseva One', serif;
+    font-size: 38px;
+    letter-spacing: 1px;
+    color: #2b4863;
+    margin: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.brand__decor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand__decor .onda-about {
+    width: 40px;
+}
+
+.brand__decor .h2o {
+    font-family: 'Amatic SC', serif;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #2b4863;
+}
+
+.page-title {
+    font-family: 'Yeseva One', serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #886956;
+    margin: 0;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+
+.team-wrapper {
+    max-width: 620px;
+    margin: 40px auto 120px;
+    padding: 0 24px 40px;
+}
+
+.team-list {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    gap: 48px;
+}
+
+.role {
+    position: relative;
+    padding: 52px 28px 54px;
+    background: #ddfaff;
+    border: none;
+    text-align: center;
+}
+
+.role:last-child {
+    border-bottom: none;
+}
+
+.role__title {
+    font-family: 'Yeseva One', serif;
+    font-size: 31px;
+    letter-spacing: 3px;
+    color: #23476a;
+    margin: 0 0 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.role__media {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role__media img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.role__names {
+    font-family: 'Sacramento', cursive;
+    font-size: 40.5px;
+    color: #2b4863;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.role__names span {
+    display: inline-block;
+    font-size: 40.5px;
+}
+
+.role__icon {
+    position: static !important;
+    width: 82px;
+    height: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: none !important;
+    display: block;
+    margin: 10px auto 6px;
+}
+
+.role--double .role__icon {
+    display: inline-block;
+    margin: 10px 14px 6px;
+    width: 78px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 560px) {
+    .role {
+        padding: 46px 22px 50px;
+    }
+
+    .role__icon {
+        width: 74px;
+    }
+
+    .role--double .role__icon {
+        width: 70px;
+    }
+}
+
+@media (min-width: 700px) {
+    .role__names {
+        font-size: 34px;
+    }
+
+    .role__icon {
+        width: 88px;
+    }
+
+    .role--double .role__icon {
+        width: 84px;
+    }
+}
+
+@media (min-width: 900px) {
+    .role {
+        padding: 60px 40px 64px;
+    }
+
+    .role__title {
+        font-size: 31px;
+    }
+
+    .role__names {
+        font-size: 36px;
+    }
+
+    .role__icon {
+        width: 96px;
+    }
+
+    .role--double .role__icon {
+        width: 90px;
+    }
+}
+
+@media (min-width: 600px) {
+    .team-wrapper {
+        max-width: 520px;
+    }
+
+    .role__title {
+        font-size: 31px;
+    }
+
+    .role__names {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 981px) {
+    .about-header__inner {
+        position: relative;
+    }
+
+    .page-title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* === Layout intercalado membros === */
+.members {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.member__name {
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    color: #2b4863;
+    line-height: 1;
+}
+
+.member__icon {
+    width: 78px;
+    height: auto;
+}
+
+.member--icon-right {
+    flex-direction: row;
+}
+
+.member--icon-left {
+    flex-direction: row-reverse;
+}
+
+.role__names,
+.role__icon {
+    display: none !important;
+}
+
+.role__title {
+    margin-bottom: 36px;
+}
+
+@media (max-width: 560px) {
+    .member__name {
+        font-size: 36px;
+    }
+
+    .member__icon {
+        width: 64px;
+    }
+
+    .members {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 900px) {
+    .member__name {
+        font-size: 42px;
+    }
+
+    .member__icon {
+        width: 84px;
+    }
+}
+/* === Fim layout intercalado === */

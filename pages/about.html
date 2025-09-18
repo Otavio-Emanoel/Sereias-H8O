@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/Logo.png" type="image/png">
+    <title>Sobre o projeto • Sereia's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Alice&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/globals.css" />
+    <link rel="stylesheet" href="../styles/about.css" />
+    <link rel="stylesheet" href="../styles/animation.css" />
+</head>
+
+<body class="about-body">
+    <header class="about-header">
+        <div class="about-header__inner">
+            <div class="brand">
+                <img src="../assets/Logo.png" alt="Logo Sereia's" class="brand__logo" />
+                <div class="brand__text">
+                    <h1 onclick="voltarInicio()" class="brand__title">Sereia&#39;s</h1>
+                    <div class="brand__decor" aria-label="Linhas decorativas com texto H8O">
+                        <img class="onda-about" src="../assets/ondas.png" alt="Onda decorativa" />
+                        <span class="h2o">H8O</span>
+                        <img class="onda-about" src="../assets/ondas.png" alt="Onda decorativa" />
+                    </div>
+                </div>
+            </div>
+            <h2 class="page-title">Sobre o projeto</h2>
+        </div>
+    </header>
+
+    <main class="about-wrapper">
+        <!-- Introdução -->
+        <section class="section section--with-media intro">
+            <div class="section__text">
+                <h2 class="section__heading">Introdução</h2>
+                <p>A crescente poluição dos ambientes costeiros representa uma ameaça significativa à biodiversidade
+                    marinha, à saúde pública e à qualidade de vida das comunidades litorâneas. Diante desse cenário,
+                    torna-se urgente adotar medidas práticas e educativas que contribuam para a preservação do meio
+                    ambiente e a promoção de uma cultura de responsabilidade socioambiental. Este projeto tem como
+                    objetivo principal atuar na limpeza de praias por meio de mutirões periódicos, aliando ações
+                    concretas à conscientização da população sobre o descarte correto de resíduos.</p>
+                <p>Mais do que recolher lixo, buscamos transformar mentalidades. Por isso, o projeto também promove
+                    campanhas educativas e incentiva a participação ativa da comunidade, especialmente valorizando o
+                    protagonismo feminino em iniciativas de impacto social. Acreditamos que a preservação ambiental é
+                    uma tarefa coletiva e contínua, e que pequenas atitudes, quando somadas, geram grandes mudanças.</p>
+            </div>
+            <div class="section__media media-stack">
+                <figure><img src="../assets/imagem-1.jpeg" alt="Tartaruga presa em rede" /></figure>
+                <figure><img src="../assets/imagem-2.jpeg" alt="Caranguejo eremita com lixo" /></figure>
+            </div>
+        </section>
+
+        <!-- Objetivos -->
+        <section class="section section--with-media objetivos">
+            <div class="section__text">
+                <h2 class="section__heading">Objetivos</h2>
+                <h3 class="subheading">Geral</h3>
+                <p>Contribuir para a preservação do meio ambiente através da limpeza de praias e ações educativas que
+                    promovam consciência ambiental.</p>
+                <h3 class="subheading subheading--small">Específico</h3>
+                <ul class="list">
+                    <li>Realizar mutirões de limpeza em praias periodicamente;</li>
+                    <li>Promover campanhas de conscientização sobre descarte correto de resíduos;</li>
+                    <li>Incentivar a participação da comunidade em ações ambientais;</li>
+                    <li>Reduzir a quantidade de lixo acumulado nas áreas costeiras;</li>
+                    <li>Valorizar o protagonismo feminino em iniciativas de impacto social.</li>
+                </ul>
+            </div>
+            <div class="section__media">
+                <figure class="media-single"><img src="../assets/imagem-3.jpeg"
+                        alt="Tartaruga nadando entre plásticos" /></figure>
+            </div>
+        </section>
+
+        <!-- Missão / Valor / Visão -->
+        <section class="section mvv">
+            <div class="mvv__grid">
+                <div class="mvv__item">
+                    <h2 class="section__heading">Missão</h2>
+                    <p>Promover a preservação ambiental por meio da limpeza e conscientização sobre a importância de
+                        manter as praias livres de poluição, valorizando a força e união feminina na transformação
+                        social.</p>
+                </div>
+                <div class="mvv__item">
+                    <h2 class="section__heading">Valor</h2>
+                    <ul class="list">
+                        <li>Sustentabilidade;</li>
+                        <li>União e protagonismo feminino;</li>
+                        <li>Responsabilidade social e ambiental;</li>
+                        <li>Respeito à vida marinha;</li>
+                        <li>Educação e conscientização ecológica.</li>
+                    </ul>
+                </div>
+                <div class="mvv__item">
+                    <h2 class="section__heading">Visão</h2>
+                    <p>Ser referência nacional como uma ONG liderada por mulheres que inspira comunidades a cuidar do
+                        meio ambiente e contribui para um futuro sustentável.</p>
+                </div>
+            </div>
+            <div class="gallery-bottom">
+                <figure><img src="../assets/imagem-4.webp" alt="Lixo flutuando no oceano" /></figure>
+                <figure><img src="../assets/imagem-5.jpeg" alt="Praia poluída ao entardecer" /></figure>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function voltarInicio() {
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+
+</html>
