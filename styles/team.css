@@ -264,7 +264,9 @@
 }
 
 .member__icon {
-    width: 78px;
+    max-width: 78px;
+    max-height: 78px;
+    object-fit: contain;
     height: auto;
 }
 
@@ -308,4 +310,36 @@
         width: 84px;
     }
 }
+
 /* === Fim layout intercalado === */
+
+/* === Ajustes de responsividade título header === */
+@media (max-width:640px) {
+    .about-header__inner {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .page-title {
+        font-size: 30px;
+        letter-spacing: 1.2px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .brand__title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width:420px) {
+    .page-title {
+        font-size: 26px;
+    }
+
+    .brand__title {
+        font-size: 30px;
+    }
+}
+
+/* === Fim ajustes === */
